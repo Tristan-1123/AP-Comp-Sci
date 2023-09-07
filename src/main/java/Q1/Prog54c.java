@@ -14,6 +14,10 @@ public class Prog54c {
 
         double area = pi * (rad * rad);
 
-        double circum = pi * rad;
+        double circum = (pi*2) * rad;
+
+        System.out.printf("The Radius = %.3f\n", rad );
+        System.out.printf("The Area is = %.3f\n", area);
+        System.out.printf("The Circumference = %.3f\n", circum );
     }
 }
