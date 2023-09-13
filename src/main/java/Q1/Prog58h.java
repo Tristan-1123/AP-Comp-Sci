@@ -16,8 +16,9 @@ public class Prog58h {
         System.out.print("Number of days at interest ");
         double t = input.nextDouble();
 
-        double A = p*( 1+Math.pow(.01*r/n, n*t/365));
+        double A = p*( Math.pow(1+.01*r/n, n*t/365)-1);
 
-        System.out.println("The interest is $" + A);
+        System.out.printf("The interest is $ %.2f\n",  A);
+        System.out.printf("The Amount is $ %.2f\n",  (A + p));
     }
 }
