@@ -9,6 +9,6 @@ public class Prog88a {
         int qwertt = input.nextInt();
         Cl88a nu = new Cl88a(asd,qwertt);
         nu.calc();
-        System.out.
+        System.out.println(nu);
     }
 }

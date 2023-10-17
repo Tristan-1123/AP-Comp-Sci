@@ -6,7 +6,7 @@ public class Cl88a {
     private int sum;
     private int diff;
     private int pro;
-    private int ave;
+    private double ave;
     private int diss;
     private int max;
     private int min;
@@ -27,7 +27,7 @@ public class Cl88a {
         sum = num1 + num2;
         diff = num1 - num2;
         pro = num1 * num2;
-        ave = (num1 + num2)/2;
+        ave =  ((double) num1 + num2)/2;
         diss = Math.abs(diff);
         if (num1 < num2) {
             max = num2;
