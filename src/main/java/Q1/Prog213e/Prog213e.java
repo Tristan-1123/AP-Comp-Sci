@@ -25,11 +25,11 @@ public class Prog213e {
                 num5 += nu.getAge5();
                 lcv++;
             }
-            System.out.println("<20 \t"+ num1 + "\t" + (num1/loopcv) +"%\n"+
-                    "20-39 \t"+ num2 + "\t" + (num2/loopcv)+ "%\n"+
-                    "40-59 \t"+ num3 + "\t" + (num3/loopcv) + "%\n"+
-                    "60-79 \t" + num4 + "\t" + (num4/loopcv) + "%\n"+
-                    ">80 \t" + num5 + "\t" + (num5/loopcv) + "%");
+            System.out.println("<20 \t"+ num1 + "\t" + (num1/loopcv)*100 +"%\n"+
+                    "20-39 \t"+ num2 + "\t" + (num2/loopcv)*100+ "%\n"+
+                    "40-59 \t"+ num3 + "\t" + (num3/loopcv)*100 + "%\n"+
+                    "60-79 \t" + num4 + "\t" + (num4/loopcv)*100 + "%\n"+
+                    ">80 \t" + num5 + "\t" + (num5/loopcv)*100 + "%");
             }
         catch (IOException e) {
             System.out.println("Can't find Data File!");
