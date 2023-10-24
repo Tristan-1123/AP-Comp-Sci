@@ -2,22 +2,28 @@ package Q1.Prog213fCl;
 
 public class Cl213f {
     private int h;
-    private double rate;
     private double cash;
     public Cl213f (int hours){
-        h= hours;
-        rate = 0;
+        h = hours;
         cash=0;
     }
     public void calc(){
-        if(h<=2000){
-            rate = 0.07;
+        if(h<=2000 && h>0){
+            cash = 0.07*h;
         }
         else if (h>2000 && h<=10000){
-            rate = 0.05;
+            cash+= 2000*0.07;
+            h -= 2000;
+            cash += 0.05*h;
         }
-        else if (h>10000) rate = 0.04;
-        cash = rate*h;
+        else if (h>10000) {
+            cash+= 2000*0.07;
+            h -= 2000;
+            cash += 0.05*8000;
+            h-=8000;
+            cash += h*0.04;
+
+        }
     }
     public String toString(){
         return "The cost of " + h +" hours of electricity is $"+ cash;

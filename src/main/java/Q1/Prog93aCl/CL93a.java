@@ -26,11 +26,6 @@ public class CL93a {
         lateTotalAmount = totalAmount+(totalAmount*0.04);
     }
 
-    public double getBaseCharge() {return baseRate;}
-    public double getSurcharge() {return surcharge;}
-    public double getCitytax() {return cityTax;}
-    public double gettotalAmount() {return totalAmount;}
-    public double getLateTotalAmount() {return lateTotalAmount;}
     public String toString() {
 
         return "Amount due: "+ totalAmount+"\n" + " Amount due if late: "+lateTotalAmount;
