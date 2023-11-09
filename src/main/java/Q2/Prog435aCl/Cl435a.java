@@ -49,5 +49,5 @@ public class Cl435a {
         else if (ga == 7) toll = 5.5;
         else if (ga == 8) toll = 6;
     }
-    public String toString() {return "\t"+car_type +"\t"+ toll + "\t"+ type + "\t"+ "$" + (toll*type);}
+    public String toString() {return car_type +" "+ toll + " "+ type + " "+ "$" + (toll*type);}
 }
