@@ -15,11 +15,11 @@ public class Cl214b {
     private double net_pay;
 
     public Cl214b(int employee_number, double year_to_date_pay,double base_pay_rate,double shift_code, double hours_worked){
-          em_num=employee_number;
-          y_t_d=year_to_date_pay;
-          b_p_r=base_pay_rate;
-          s_c=shift_code;
-          hours=hours_worked;
+        em_num=employee_number;
+        y_t_d=year_to_date_pay;
+        b_p_r=base_pay_rate;
+        s_c=shift_code;
+        hours=hours_worked;
     }
     public void calc(){
         gross = hours*(b_p_r*s_c);

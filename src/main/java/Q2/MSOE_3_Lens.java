@@ -14,5 +14,6 @@ public class MSOE_3_Lens {
         double r2 = input.nextDouble();
 
         double tempo = (n-1)*(1/r1 - 1/r2 + ((n-1)*d)/(n*r1*r2));
+        System.out.println(tempo);
     }
 }
