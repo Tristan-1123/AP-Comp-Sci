@@ -7,7 +7,6 @@ public class Prog213b {
         try{
             Scanner input = new Scanner(new File("Langdat/prog213b.txt"));
             ArrayList<Transaction> list = new ArrayList<Transaction>();
-
             double balance = input.nextDouble();
             Bank wow =new Bank(balance);
 
