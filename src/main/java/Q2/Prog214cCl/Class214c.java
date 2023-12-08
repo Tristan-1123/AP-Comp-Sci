@@ -26,8 +26,9 @@ public class Class214c {
 
         wash_cost=2;
         if(wash.equals("N")) wash_cost=0;
-        else if(gallons>20)wash_cost -= wash_cost * (0.1*(gallons/10));
-        else wash_cost = 0;
+        else if(!(gallons>=20) && gallons>10 )wash_cost = wash_cost * (1-(0.1*(gallons/10)));
+        else if (gallons>=20)wash_cost=0;
+        else if (gallons<=10)wash_cost = 2;
 
         if(g_t.equals("R")){
             gas_cost= gallons*reg;
