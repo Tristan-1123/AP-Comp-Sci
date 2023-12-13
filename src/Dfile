@@ -7,4 +7,4 @@ public static void main(String[] args) {
             }
         }
         catch (IOException e) {
-            System.out.println("Can't find Data File!");
+            System.out.println("Can't find Data File!");}}
