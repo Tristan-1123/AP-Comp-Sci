@@ -8,11 +8,11 @@ public class Prog465a {
         try{
             Scanner input = new Scanner(new File("Langdat/prog465a.dat"));
             int[][] mat= new int[4][4];
-            for(int row = 0; row < mat.length-1; row++)
+            for(int row = 0; row < mat.length; row++)
                 for (int col = 0; col < mat[0].length; col++)  // mat[row].length-1
                     mat[row][col] = input.nextInt();
             int[][] mat2= new int[4][4];
-            for(int row = 0; row < mat.length-1; row++)
+            for(int row = 0; row < mat.length; row++)
                 for (int col = 0; col < mat2[0].length; col++)  // mat[row].length-1
                     mat2[row][col] = input.nextInt();
             
